@@ -3,3 +3,8 @@ flask
 numpy
 transformers
 onnxruntime
+pytest==8.3.4
+pytest-cov==6.0.0
+pylint
+black
+ipython==8.31.0

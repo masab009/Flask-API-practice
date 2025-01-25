@@ -16,8 +16,8 @@ def to_numpy(tensor):
 
 @app.route("/")
 def home():
-    return "<h2>roBERTA sentiment analysis"
-
+    return "<h2>roBERTA sentiment analysis</h2>"
+      
 @app.route("/predict",methods=["POST"])
 def getPredictions():
     data = request.json
