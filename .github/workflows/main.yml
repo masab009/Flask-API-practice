@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    run-ons: ubuntu-latest
+    run-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
