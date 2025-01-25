@@ -1,4 +1,4 @@
-# Simple with flask-python to learn about APIs and how they work 
+# Practice with flask-python to learn about APIs and how they work 
 
 ## Running the Project
 
