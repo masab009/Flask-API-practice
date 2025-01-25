@@ -1,0 +1,25 @@
+name: python application for sentiment analysis using roberta
+
+on: [push]
+
+jobs:
+  build:
+    run-ons: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        make install
+    - name:   linting the code
+      run: |
+        make lint
+    - name: format the code
+      run: |
+        make format
+    - name: Test with pytest
+      run: |
+        make test
